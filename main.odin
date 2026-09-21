@@ -46,7 +46,7 @@ main :: proc() {
 	sampler := init_sampler(transformer.config.vocab_size, opts.temperature, opts.topp, opts.seed)
 	defer free_sampler(&sampler)
 
-	fmt.println("--- Inference Engine Initialized ---")
+	fmt.println("Started")
 
 	switch opts.mode {
 	case "generate":

@@ -4,10 +4,10 @@ build:
   odin build .
 
 run: build
-  ./tour_de_force
+  ./tour-de-force -c=stories15M.bin -t=tokenizer.bin
 
 clean: 
-  rm tour_de_force
+  rm tour-de-force
 
 init:
   chmod +x get.sh
